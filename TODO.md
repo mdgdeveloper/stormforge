@@ -2,7 +2,8 @@
 
 ## Phase 1
 
-- [ ] Install NextJS
+- [x] Install NextJS
+- [ ] Install Shadcn/UI
 - [ ] Install NestJS
 - [ ] Install PrismaORM
 - [ ] Docker for PostgreSQL
