@@ -1,12 +1,11 @@
 # Stormforge Project
 
 <!-- Pending Badges -->
-- Version 0.0.1
-- NextJS
-- Shadcn/UI
-- NestJS
-- PrismaORM
-- PostgreSQL
+![Version](https://img.shields.io/badge/version-0.0.1-blue)
+![NextJS](https://img.shields.io/badge/next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![NestJS](https://img.shields.io/badge/-NestJs-ea2845?style=flat-square&logo=nestjs&logoColor=white)
+![PrismaORM](https://img.shields.io/badge/Prisma-3982CE?style=flat-square&logo=Prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/postgresql-4169e1?style=flat-square&logo=postgresql&logoColor=white)
 
 ## Description
 
