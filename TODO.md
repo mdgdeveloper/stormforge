@@ -6,4 +6,4 @@
 - [x] Install Shadcn/UI
 - [x] Install NestJS
 - [x] Docker for PostgreSQL
-- [ ] Install PrismaORM
+- [x] Install PrismaORM
