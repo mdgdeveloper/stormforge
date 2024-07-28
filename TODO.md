@@ -4,6 +4,6 @@
 
 - [x] Install NextJS
 - [x] Install Shadcn/UI
-- [ ] Install NestJS
+- [x] Install NestJS
 - [ ] Install PrismaORM
 - [ ] Docker for PostgreSQL
