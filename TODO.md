@@ -7,3 +7,7 @@
 - [x] Install NestJS
 - [x] Docker for PostgreSQL
 - [x] Install PrismaORM
+
+## Phase 2
+
+- [ ] Model data
