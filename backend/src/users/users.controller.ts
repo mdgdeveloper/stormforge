@@ -8,8 +8,8 @@ import {
   Put,
 } from '@nestjs/common';
 import { UsersService } from './users.service';
-import { CreateUserDto } from './dto/create-user.dto';
-import { UpdateUserDto } from './dto/update-user.dto';
+import { User, Prisma } from '@prisma/client';
+import { Public } from 'src/auth/public';
 
 @Controller('users')
 export class UsersController {
@@ -18,13 +18,20 @@ export class UsersController {
   }
 
   @Post()
-  create(@Body() createUserDto: CreateUserDto) {
-    return this.usersService.create(createUserDto);
+  create(@Body() data: Prisma.UserCreateInput) {
+    return this.usersService.create(data);
   }
-
+  @Public()
   @Get()
   findAll() {
     return this.usersService.findAll();
+  }
+
+  // Profile information and management
+  @Get('profile')
+  getProfile() {
+    // return this.usersService.getProfile();
+    // return this.usersService.getProfile();
   }
 
   @Get(':id')
@@ -33,19 +40,17 @@ export class UsersController {
   }
 
   @Put(':id')
-  update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
-    return this.usersService.update(+id, updateUserDto);
+  update(@Param('id') id: string, @Body() data: Prisma.UserUpdateInput) {
+    const params = {
+      where: { id: Number(id) },
+      data,
+    };
+    return this.usersService.update(params);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
     return this.usersService.remove(+id);
-  }
-
-  // Profile information and management
-  @Get('profile')
-  getProfile() {
-    // return this.usersService.getProfile();
   }
 
   @Put('profile')
